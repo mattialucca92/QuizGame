@@ -100,3 +100,41 @@ const questions = [
         ]
     }
 ];
+
+const questionsElement = document.getElementById("questions");
+const answersElement = document.getElementById("Answers");
+const nextElement = document.getElementById("nextQuestion");
+
+let currentQuestionIndex = 0;
+let score = 0;
+
+function startQuiz(){
+    currentQuestionIndex = 0;
+    score = 0;
+    nextElement.innerHTML = "Next";
+    showQuestion();
+}
+
+function showQuestion(){
+    resetState();
+    let currentQuestion = questions[currentQuestionIndex];
+    let questionNo = currentQuestionIndex + 1;
+    questionsElement.innerHTML = questionNo + ". " + currentQuestion.question;
+
+    currentQuestion.answers.forEach(answer => {
+        const button = document.createElement("button");
+        button.innerHTML = answer.text;
+        button.classList.add("btn");
+        answersElement.appendChild(button);
+    });
+}
+
+function resetState(){
+    nextElement.style.display = "none";
+    while(answersElement.firstChild){
+        answersElement.removeChild(answersElement.firstChild);
+    }
+}
+
+startQuiz();
+showQuestion();
