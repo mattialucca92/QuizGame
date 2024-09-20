@@ -171,3 +171,10 @@ img {
     background: #222;
     color: white;
 }
+
+.correct {
+    background: #9aeabc;
+}
+.incorrect {
+    background: #ff9393;
+}
