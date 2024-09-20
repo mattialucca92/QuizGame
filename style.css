@@ -151,9 +151,12 @@ img {
     cursor: pointer;
     transition: all 0.3s;
 }
-.btn:hover {
+.btn:hover:not([disabled]) {
     background: #222;
     color: white;
+}
+.btn:disabled{
+    cursor: no-drop;
 }
 #nextQuestion{
     width: 150px;
