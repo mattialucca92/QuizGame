@@ -1,0 +1,102 @@
+const questions = [
+    {
+        question : "What is the only food that cannot go bad?",
+        answers : [
+                {text : "Dark chocolate", correct : false} ,
+                {text : "Peanut butter", correct : false},
+                {text : "Canned tuna", correct : false},
+                {text : "Honey", correct : true}
+            
+        ]
+    },
+    {
+        question : "What’s the name of Hagrid’s pet spider?",
+        answers : [
+                {text : "Nigini", correct : false} ,
+                {text : "Crookshanks", correct : false},
+                {text : "Aragog", correct : true},
+                {text : "Mosag", correct : false}
+            
+        ] 
+    },
+    {
+        question : "What’s the heaviest organ in the human body?",
+        answers : [
+                {text : "Skin", correct : true} ,
+                {text : "Liver", correct : false},
+                {text : "Heart", correct : false},
+                {text : "Brain", correct : false}
+            
+        ]
+    },
+    {
+        question : "Which of these EU countries does not use the euro as its currency?",
+        answers : [
+                {text : "Poland", correct : true} ,
+                {text : "France", correct : false},
+                {text : "Germany", correct : false},
+                {text : "Croatia", correct : false}
+            
+        ]
+    },
+    {
+        question : "Which fast food restaurant has the largest number of retail locations in the world?",
+        answers : [
+                {text : "Burger King", correct : false} ,
+                {text : "Pizza Hut", correct : false},
+                {text : "Subway", correct : true},
+                {text : "Mc'Donalds", correct : false}
+            
+        ]
+    },
+    {
+        question : "Where is recognized as the location of the hottest temperature ever recorded on Earth?",
+        answers : [
+                {text : "Mitribah, Kuwait", correct : false} ,
+                {text : "Death Valley, California", correct : true},
+                {text : "Yuma, Arizona", correct : false},
+                {text : "Key West, Florida", correct : false}
+            
+        ]
+    },
+    {
+        question : "Cirque du Soleil” started in what country?",
+        answers : [
+                {text : "France", correct : false} ,
+                {text : "Usa", correct : false},
+                {text : "Canada", correct : true},
+                {text : "Russia", correct : false}
+            
+        ]
+    },
+    {
+        question : "What country are the Galapagos Islands located in?",
+        answers : [
+                {text : "Ecuador", correct : true} ,
+                {text : "Brazil", correct : false},
+                {text : "Belize", correct : false},
+                {text : "Colombia", correct : false}
+            
+        ]
+    },
+    {
+        question : "Pupusas are from what country?",
+        answers : [
+                {text : "Mexico", correct : false} ,
+                {text : "El Salvador", correct : true},
+                {text : "Argentina", correct : false},
+                {text : "Chile", correct : false}
+            
+        ]
+    },
+    {
+        question : "What is the name of the talkative parrot in “Aladdin”?",
+        answers : [
+                {text : "Pascal", correct : false} ,
+                {text : "Meeko", correct : false},
+                {text : "Iago", correct : true},
+                {text : "Abu", correct : false}
+            
+        ]
+    }
+];
