@@ -101,11 +101,13 @@
   animation: move-background 150s linear infinite;
 }
 img {
-  height: 70vh;
-  width: 70vh;
   position: absolute;
   z-index: 3;
   right: 20px;
+  width: 50%;
+  height: auto;
+  max-width: 70vh;
+  max-height: 70vh;
 }
 
 .app{
@@ -113,11 +115,12 @@ img {
     position: relative;
     z-index: 5; /* Assicura che il testo sia sopra l'immagine */
     color: lightblue;
-    width: 90%;
     max-width: 600px;
     margin: 100px auto 0;
     border-radius: 10px;
     padding: 20px;
+    width: 95%;
+    margin: 50px auto;
 }
 
 .app h1 {
@@ -181,3 +184,42 @@ img {
 .incorrect {
     background: #ff9393;
 }
+
+/* Aggiungo regole per schermi più piccoli */
+@media screen and (max-width: 768px) {
+  .app h1 {
+      font-size: 40px;
+  }
+  .quiz h2 {
+      font-size: 20px;
+  }
+  .btn {
+      width: 100%;
+      font-size: 16px;
+  }
+  img {
+      width: 50vw;
+      height: auto;
+  }
+  .app {
+      margin: 50px auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .app h1 {
+      font-size: 30px;
+  }
+  .quiz h2 {
+      font-size: 18px;
+  }
+  .btn {
+      width: 100%;
+      font-size: 14px;
+  }
+  img {
+      width: 60vw;
+      height: auto;
+  }
+}
+
